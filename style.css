@@ -1,0 +1,42 @@
+.center {
+    text-align: center;
+}
+
+.estilosej5,
+.center {
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+legend {
+    color: white;
+}
+
+#messi {
+    background-image: url("img/Messi.jpg");
+    background-size: 55% 110%;
+    background-position: right;
+    border-color: red;
+}
+
+input {
+    text-align: center;
+}
+
+.borderojo {
+    border-style: solid;
+    border-color: red;
+    border-width: medium;
+    width: 25%;
+    margin: 0 auto;
+}
+
+#preciototalsombreros {
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}

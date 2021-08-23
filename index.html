@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maratón Javascript avanzando</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- 1 -->
+    <div class="center">
+        <input type="number" id="edad" placeholder="Ingrese su edad">
+        <select id="planetaFavorito">
+        <option value="" option selected="true" disabled>Seleccione su planeta favorito:</option>
+        <option value="Mercurio" id="mercurio">Mercurio</option>
+        <option value="Venus" id="venus">Venus</option>
+        <option value="Tierra" id="tierra">Tierra</option>
+        <option value="Marte" id="marte">Marte</option>
+        <option value="Jupiter" id="jupiter">Jupiter</option>
+        <option value="Saturno" id="saturno">Saturno</option>
+        <option value="Urano" id="urano">Urano</option>
+        <option value="Neptuno" id="neptuno">Neptuno</option>
+        </select>
+        <br>
+        <br>
+        <p id="totaledad"></p>
+    </div>
+    <br>
+    <br>
+    <div class="center">
+        <!-- 2 -->
+        <select id="florFavorita">
+        <option value="florlimon">Limon</option>
+        <option value="floralgodon">Algodón</option>
+        <option value="florolivo">Olivo</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="center">
+        <img src="img/Flor-limon.jpg" id="imagenflor" width="700px" height="500px">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- 3 -->
+    <div class="center">
+        <button id="boton">Tirá el dado</button>
+        <button id="botonhistorico">Histórico</button>
+        <br>
+        <br>
+        <input type="text" id="tirada" placeholder="Tiradas:">
+        <br>
+        <br>
+        <input type="text" id="total" placeholder="Suma de tiradas:">
+        <br>
+        <br>
+        <input type="text" id="totalganador" style="width:200px" placeholder="Total de jugador ganador">
+        <br>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <!-- 5 -->
+    <form action="" id="messi">
+        <fieldset>
+            <legend class="center"> Ganate una pelota firmada por Messi! </legend>
+            <div class="estilosej5 center">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" minlength="3" maxlength="16" required>
+            </div>
+            <div class="estilosej5 center">
+                <input type="text" name="equipofavorito" id="equipofavorito" placeholder="Equipo Favorito" required>
+            </div>
+            <div class="estilosej5 center">
+                <input type="number" name="edad" id="edadusuario" placeholder="Edad" required>
+            </div>
+            <div class="estilosej5 center">
+                <input type="number" name="dni" id="dni" placeholder="DNI" minlength="7" maxlength="8" required>
+            </div>
+            <div class="estilosej5 center">
+                <input type="email" name="email" id="mail" placeholder="Mail" required>
+            </div>
+            <div class="estilosej5 center">
+                <textarea name="mensaje" id="mensaje" cols="40" rows="5" placeholder="Mensaje para Messi" minlength="30"></textarea>
+            </div>
+            <div class="estilosej5 center">
+                <input type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- 7 -->
+    <div class="center">
+        <p><b>INFORMACIÓN DE COSTOS</b></p>
+        <p>Carne por kilo: <b>$700</b></p>
+        <p>Botella de cerveza: <b>$200</b></p>
+        <p>Kilo de helado: <b>$600</b></p>
+    </div>
+    <br>
+    <br>
+    <div class="center">
+        <p><b>INGRESE LA CANTIDAD DE COMENSALES</b></p>
+        <br>
+        <input type="number" id="cantidadcomensales" placeholder="Cantidad Comensales">
+        <button id="calcular">Calcular</button>
+    </div>
+    <br>
+    <div class="center">
+        <p><b>CANTIDADES DE PRODUCTOS (x persona)</b></p>
+        <br>
+        <input type="text" id="cantidadcarne" placeholder="Cantidad Carne">
+        <input type="text" id="cantidadcerveza" placeholder="Cantidad Cerveza">
+        <input type="text" id="cantidadhelado" placeholder="Cantidad Helado">
+    </div>
+    <br>
+    <div class="center">
+        <p><b>PRECIO POR PRODUCTO</b></p>
+        <br>
+        <input type="text" id="preciocarne" placeholder="Precio Carne">
+        <input type="text" id="preciocerveza" placeholder="Precio Cerveza">
+        <input type="text" id="preciohelado" placeholder="Precio Helado">
+
+    </div>
+    <br>
+    <div class="center">
+        <p><b>PRECIOS TOTALES</b></p>
+        <input type="text" id="preciototal" placeholder="Precio Total">
+        <input type="text" id="precioporpersona" placeholder="Precio x Persona">
+    </div>
+    <br>
+    <br>
+    <!-- 8 -->
+    <br>
+    <br>
+    <p class="center"><b>TIENDA DE SOMBREROS</b></p>
+    <div class="center">
+        <img src="img/Sombrero-bombin.jpg" alt="Sombrero Bombín" height="150px" width="200px">
+        <div id="infobombin">
+            <p>Sombrero Bombín</p>
+            <p><b>$1500</b> x c/u</p>
+            <p>Cantidad: <input type="number" id="cantidadbombin" min="0" max="3" value="0" readonly>
+                <button id="sumarcantidadbombin">+</button>
+                <button id="restarcantidadbombin">-</button>
+            </p>
+            <p>Precio: <input type="text" id="preciobombin"></p>
+        </div>
+    </div>
+    <div class="center">
+        <img src="img/Sombrero-clasico.jpg" alt="Sombrero Clásico" height="150px" width="200px">
+        <div id="infoclasico">
+            <p>Sombrero Clásico</p>
+            <p><b>$1200</b> x c/u</p>
+            <p>Cantidad: <input type="number" id="cantidadclasico" min="0" max="3" value="0" readonly>
+                <button id="sumarcantidadclasico">+</button>
+                <button id="restarcantidadclasico">-</button>
+            </p>
+            <p>Precio: <input type="text" id="precioclasico"></p>
+        </div>
+    </div>
+    <div class="center">
+        <img src="img/Sombrero-copa.jpg" alt="Sombrero Copa o Galera" height="150px" width="200px">
+        <div id="infocopa">
+            <p>Sombrero Copa Alta</p>
+            <p><b>$2000</b> x c/u</p>
+            <p>Cantidad: <input type="number" id="cantidadcopa" min="0" max="3" value="0" readonly>
+                <button id="sumarcantidadcopa">+</button>
+                <button id="restarcantidadcopa">-</button>
+            </p>
+            <p>Precio: <input type="text" id="preciocopa"></p>
+        </div>
+    </div>
+    <div class="center">
+        <img src="img/Sombrero-playa.jpg" alt="Sombrero Playa" height="150px" width="200px">
+        <div id="infoplaya">
+            <p>Sombrero Playa</p>
+            <p><b>$700</b> x c/u</p>
+            <p>Cantidad: <input type="number" id="cantidadplaya" min="0" max="3" value="0" readonly>
+                <button id="sumarcantidadplaya">+</button>
+                <button id="restarcantidadplaya">-</button>
+            </p>
+            <p>Precio: <input type="text" id="precioplaya"></p>
+        </div>
+    </div>
+    <div class="center">
+        <img src="img/Sombrero-vestir.jpg" alt="Sombrero de Vestir" height="150px" width="200px">
+        <div id="infovestir">
+            <p>Sombrero de Vestir</p>
+            <p><b>$2500</b> x c/u</p>
+            <p>Cantidad: <input type="number" id="cantidadvestir" min="0" max="3" value="0" readonly>
+                <button id="sumarcantidadvestir">+</button>
+                <button id="restarcantidadvestir">-</button>
+            </p>
+            <p>Precio: <input type="text" id="preciovestir"></p>
+        </div>
+    </div>
+    <div class="center">
+        <button id="confirmarpedido">Agregar total al carrito</button>
+        <p><b>PRECIO TOTAL:</b></p><input type="text" id="preciototalsombreros" value="0" readonly></p>
+    </div>
+    <br>
+    <br>
+    <!-- 9 -->
+    <div class="center">
+        <p><b>COTIZADOR DE SEGUROS</b></p>
+        <select id="seleccionanio">
+         <option option selected="true" disabled >Seleccione su año</option>
+        <option value="2007">2007</option>
+        <option value="2012">2012</option>
+        <option value="2015">2015</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <div class="center">
+        <input type="text" id="cotizaranios" placeholder="Años a cotizar">
+    </div>
+    <div class="center">
+        <input type="text" id="cotizartotal" placeholder="Precio Total">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
